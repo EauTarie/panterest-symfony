@@ -9,13 +9,16 @@ use DateTimeImmutable;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpClient;
+
 /**
-* @ORM\Tables(name="pins")
+* @ORM\Table(name="pins")
 * @ORM\HasLifecycleCallbacks
 */
+
 #[ORM\Entity(repositoryClass: PinRepository::class)]
 #[ORM\Table(name:'pins')]
 #[ORM\HasLifecycleCallbacks]
+
 class Pin
 {
     use Timestampable;
