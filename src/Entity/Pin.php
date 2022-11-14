@@ -8,7 +8,7 @@ use DateTime;
 use DateTimeImmutable;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\HttpClient;
 /**
 * @ORM\Tables(name="pins")
 * @ORM\HasLifecycleCallbacks

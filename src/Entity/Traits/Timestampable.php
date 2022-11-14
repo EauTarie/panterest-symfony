@@ -1,7 +1,9 @@
 <?php
-use Doctrine\ORM\Mapping as ORM;
 namespace App\Entity\Traits;
-
+use App\Repository\PinRepository;
+use Doctrine\ORM\Mapping as ORM;
+use DateTime;
+use DateTimeImmutable;
 trait Timestampable {
 
     #[ORM\Column]
